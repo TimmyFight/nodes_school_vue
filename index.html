@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Vue JS</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+</head>
+
+<body>
+    
+    <div id="app">
+        <img :src="path" width="100" height="100"><br>
+        <input v-model="path" />
+    </div>
+    
+
+<script>
+    new Vue ({
+        data() {
+            return {
+                path: "images/image_1.jpg"
+            };
+        }
+    }).$mount("#app");
+</script>
+</body>
+
+</html>
